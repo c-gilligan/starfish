@@ -1,0 +1,16 @@
+diff --git a/cmake/DownloadAndExtract.cmake b/cmake/DownloadAndExtract.cmake
+index 7bd6028..f1767d8 100644
+--- a/cmake/DownloadAndExtract.cmake
++++ b/cmake/DownloadAndExtract.cmake
+@@ -31,8 +31,8 @@ macro(download_platform _base_url _base_name _ext_src _ext_plat)
+   set(_checkfile "${_base_name}${_ext_src}")
+   download_and_extract("${_url}" "${_checkfile}")
+   # now download the platform specific file
+-  set(_url "${_base_url}/${_base_name}-${PYNE_ASM_PLATFORM}.tar.gz")
+-  set(_checkfile "${_base_name}-${PYNE_ASM_PLATFORM}${_ext_plat}")
+-  download_and_extract("${_url}" "${_checkfile}")
++  #set(_url "${_base_url}/${_base_name}-${PYNE_ASM_PLATFORM}.tar.gz")
++  #set(_checkfile "${_base_name}-${PYNE_ASM_PLATFORM}${_ext_plat}")
++  #download_and_extract("${_url}" "${_checkfile}")
+ endmacro()
+ 
