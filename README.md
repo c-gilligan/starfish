@@ -9,8 +9,8 @@ Efforts by [Connor Gilligan](https://github.com/c-gilligan/) and friends have ma
 ## How to run 
 1. Install Nix according to its [install instructions](https://nix.dev/install-nix).
 2. Clone the repository with `git clone https://github.com/c-gilligan/starfish.git`
-3. If you don't already have them, download the flux profiles you want to use. (RRR staff: Download rabbit.csv from the drive.)
-4. Using a terminal, enter the repository folder and run `nix run --extra-experimental-features nix-command --extra-experimental-features flakes`. It will take a minute or two to build the first time, but will only take a few seconds after that.
+3. Using a terminal, enter the repository folder and run `nix run --extra-experimental-features nix-command --extra-experimental-features flakes`. It will take a minute or two to build the first time, but will only take a few seconds after that.
+4. Select a flux profile (RRR employees: Use rabbit.csv for rabbit. Don't forget to read the SOPs.)
 
 Note: This procedure may require you to first install [PyNE (Python Nuclear Engineering toolkit)](https://github.com/pyne/pyne). If you have an ARM device, such as Apple silicon Macs, PyNE must be compiled with the `--slow` flag, and the compiled dylib file may need to be manually copied into the right place or added to PATH for the OS to find it. 
 
